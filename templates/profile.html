@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Profile Page
+{% endblock %}
+
+{% block jumbotron %}
+    <h1>Here some info about your profile</h1>
+    <h2>Email: {{ session.email }}</h2>
+    <h2>Fullname: {{ session.fullname }}</h2>
+{% endblock %}
+
+{% block content %}
+    <p>For more information press
+        <a href="https://www.linkedin.com/in/nikita-borovik-753799197">here</a>
+    </p>
+{% endblock %}

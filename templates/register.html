@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Registration Page
+{% endblock %}
+
+{% block jumbotron %}
+    <h1>Weclome to Registation Page!</h1>
+    <h2>Enter your email and password</h2>
+{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="fullname" aria-describedby="emailHelp" placeholder="Full name">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="confirm" placeholder="Password confirmation">
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+{% endblock %}
